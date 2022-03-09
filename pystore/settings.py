@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     # 3rd party
     # local
     'users',
+    'pages',
+    'products',
 ]
 
 MIDDLEWARE = [
@@ -111,9 +113,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
@@ -130,6 +132,11 @@ STATIC_ROOT = BASE_DIR/'staticfiles'
 # User Model
 
 AUTH_USER_MODEL = 'users.User'
+
+# Media
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR/'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
